@@ -2,24 +2,99 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center;   
 }
 
-.level-rate h2{
-    margin-bottom: 10px;
-    
+.rate{
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 10px;
+    margin: 20px;
 }
+
+
+
+.level-rate h2{
+    margin-bottom: 10px;    
+}
+
+
 
 .level-rate{
     margin: 20px;
-    text-align: justify;
+    text-align: center;
+    background-color: #f6f3f3;
+    padding: 10px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+}
+
+.comment {
+    margin: 10px;
+    text-align:center;
+    width: 250px;
+    background-color: #ffc548;
+    padding: 10px;
+}
+
+.comment p{
+    font-size: 15px;
+ 
+    color: black
 }
 
 .level-rate li{
-    list-style: none;        
+    list-style: none;
+    padding: 5px;        
 }
 
 .rate-services{
     margin-right: 22px;
+}
+
+.rate-services td{
+    padding: 10px;
+    text-align: center;
+}
+
+.rate-services input{
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+tr:nth-last-child(even){
+    background-color: #616779;
+}
+
+.btn{
+    padding: 50px ;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s; 
+    margin: 10px;
+}
+
+.btn-register{
+    background-color: #4CAF50;
+    color: white;
+}
+
+.btn-register:hover{
+    background-color: #45a049;
+    transform: translateY(-2px);
+}
+.btn-clean{
+    background-color: #f44336;
+    color: white;
+}
+
+.btn-clean:hover{
+    background-color: #d73833;
+    transform: translateY(-2px);
 }
 

@@ -1,5 +1,30 @@
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .contact-holder{
-    text-align: center;
+   text-align: center;
+   margin:20px;
+   color: #fff;
+   font-family: 'Roboto', sans-serif;
+}
+
+.contact-holder h2{
+    margin: 20px;
+    font-size: 40px;
+}
+
+.contact-holder p{
+    margin: 20px;
+    font-size: 28px;
+}
+
+.contact-holder a{
+   color: #fff;
+
 }
 
 .map{

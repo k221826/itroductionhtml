@@ -15,7 +15,10 @@ body{
 
 .header{
 	height: 250px;
-	background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjFjfmSzSCXcjhy60MVB7JYVDlkHQ5TjnQ_Q&usqp=CAU');	
+	background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjFjfmSzSCXcjhy60MVB7JYVDlkHQ5TjnQ_Q&usqp=CAU');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;	
 }
 
 .logo{
@@ -69,7 +72,15 @@ p{
 	height: 50px;
 	background-color: #ffc548;
 	text-align: center;
-	line-height: 50px;
+	line-height: 50px;	
+	padding: 20px;
+	
+}
+
+.footer p{
+	font-weight: bold;
+	color: #fff;
+	font-size: 20px;
 }
 
 

@@ -26,82 +26,93 @@
       </ul>
     </div>
     <div class="content">
-      <div class="level-rate">
-        <h2>Please rate our service</h2>
-        <ul class="rate-service">
-          <li>1. -Needs Improvement</li>
-          <li>2. -Satisfactory</li>
-          <li>3. -Good</li>
-          <li>4. -Very Good</li>
-          <li>5. -Excellent</li>
-        </ul>
+      <div class="rate">
+        <div class="level-rate">
+          <div class="category">
+            <img src="../images/logo.png" alt="">
+          <h2>Please rate our service</h2>
+          <ul class="rate-service">
+            <li>1. -Needs Improvement</li>
+            <li>2. -Satisfactory</li>
+            <li>3. -Good</li>
+            <li>4. -Very Good</li>
+            <li>5. -Excellent</li>
+          </ul>
+          </div>
+          <div class="comment">
+            <h3>Your feedback helps us improve and provide the best service</h3>
+          </div>  
+         
+        </div>
+        <div class="rate-services">
+          <form action="" name="frm-rate-service">
+            <table width="100%" border="0" cellpadding="10" cellspacing="10">
+              <tbody>
+                <tr>
+                  <td>1.Durability</td>
+                  <td>
+                    <input
+                      type="number"
+                      min="1"
+                      max="5"
+                      id="durability"
+                      name="durability"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>2.Style/Design</td>
+                  <td>
+                    <input type="number" min="1" max="5" id="style" name="style" />
+                  </td>
+                </tr>
+                <tr>
+                  <td>3.Eco Friendliness</td>
+                  <td>
+                    <input
+                      type="number"
+                      min="1"
+                      max="5"
+                      id="Friendliness"
+                      name="Friendliness"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>4.Customer Service</td>
+                  <td>
+                    <input
+                      type="number"
+                      min="1"
+                      max="5"
+                      id="custumerS"
+                      name="custumerS"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>5.Quality of Product</td>
+                  <td>
+                    <input
+                      type="number"
+                      min="1"
+                      max="5"
+                      id="quality"
+                      name="quality"
+                    />
+                  </td>
+                </tr>
+                <td colspan="2">
+                  <input type="button" class="btn btn-register" value="Register" onclick="validator()">
+                  <input type="button" class="btn btn-clean" value="Reset" onclick="clear()">
+                </td>                         
+              </tr>    
+              </tbody>
+            </table>
+          </form>
+        </div>
       </div>
-      <div class="rate-services">
-        <form action="" name="frm-rate-service">
-          <table width="100%" border="0" cellpadding="10" cellspacing="10">
-            <tbody>
-              <tr>
-                <td>1.Durability</td>
-                <td>
-                  <input
-                    type="number"
-                    min="1"
-                    max="5"
-                    id="durability"
-                    name="durability"
-                  />
-                </td>
-              </tr>
-              <tr>
-                <td>2.Style/Design</td>
-                <td>
-                  <input type="number" min="1" max="5" id="style" name="style" />
-                </td>
-              </tr>
-              <tr>
-                <td>3.Eco Friendliness</td>
-                <td>
-                  <input
-                    type="number"
-                    min="1"
-                    max="5"
-                    id="Friendliness"
-                    name="Friendliness"
-                  />
-                </td>
-              </tr>
-              <tr>
-                <td>4.Customer Service</td>
-                <td>
-                  <input
-                    type="number"
-                    min="1"
-                    max="5"
-                    id="custumerS"
-                    name="custumerS"
-                  />
-                </td>
-              </tr>
-              <tr>
-                <td>5.Quality of Product</td>
-                <td>
-                  <input
-                    type="number"
-                    min="1"
-                    max="5"
-                    id="quality"
-                    name="quality"
-                  />
-                </td>
-              </tr>
-              <td >
-                <input class="btn-register"   type="button" value="Register" onclick="validator()" />                
-              </td>
-              <td><input class="btn-clear"  type="button" value="Clear" onclick="clear()" /></td>
-            </tbody>
-          </table>
-        </form>
-      </div>
+      
 
       
     </div>
