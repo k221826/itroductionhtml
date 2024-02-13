@@ -1,0 +1,25 @@
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.level-rate h2{
+    margin-bottom: 10px;
+    
+}
+
+.level-rate{
+    margin: 20px;
+    text-align: justify;
+}
+
+.level-rate li{
+    list-style: none;        
+}
+
+.rate-services{
+    margin-right: 22px;
+}
+

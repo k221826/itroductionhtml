@@ -5,7 +5,7 @@
 
 
 body{
-	background-image: url('../images/images.jpg');
+	background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0pzGynguEIOYwQszilgrYUBMgb7YMTFoI6g&usqp=CAU');
 }
 
 .container{
@@ -14,8 +14,8 @@ body{
 }
 
 .header{
-	height: 300px;
-	background-image: url('../images/space.png');
+	height: 250px;
+	background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjFjfmSzSCXcjhy60MVB7JYVDlkHQ5TjnQ_Q&usqp=CAU');	
 }
 
 .logo{
@@ -29,34 +29,36 @@ body{
 }
 
 .menu{
-	height: 50px;
-	background-color: beige;
+	height: 60px;
+	background-color: rgb(92, 94, 89);
+	
 }
 
 .nav{
-	list-style: none;
+	list-style: none;	
+	display: flex;
+	justify-content: space-between;
 }
 .nav li{
-	float: left;
-	text-align: center;
+	margin: 10px;
+	padding: 10px;
 }
 
 .nav a{
 	text-decoration: none;
-	width: 200px;
-	display: block;
-	line-height: 30px;
-	color: #0f0f0f;
+	color: #fff;
+	
 }
 
 .nav li a:hover{
-	background-color: #756060;
+	background-color: #838383;
+	padding: 10px;
 } 
 
 
 .content{
-	padding: 10px;
-	background-color: aqua;
+	min-height: 1000px;
+	background-color: rgb(53, 59, 59);
 }
 
 p{
