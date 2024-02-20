@@ -11,98 +11,102 @@
     />
     <link rel="stylesheet" href="../css/index.css" />
     <link rel="stylesheet" href="../css/registration.css">
+    <script src="../javascript/register.js"></script>
   </head>
-  <div class="container">
-    <div class="header">
-      <div class="logo"><img src="../images/logo.png" alt=""></div>
-    </div>
-    <div class="menu">
-      <ul class="nav">
-        <li><a href="../html/index.html">HOME</a></li>
-        <li><a href="../html/products.html">PRODUCTS</a></li>
-        <li><a href="../html/registration.html">REGISTRATION</a></li>
-        <li><a href="../html/survay.html">SURVEY</a></li>
-        <li><a href="../html/contact.html">CONTACT</a></li>
-      </ul>
-    </div>
-    <div class="content">
-    <form class="frm" action="" name="registration">     
-      <table width="100%" border="0" cellpadding="10" cellspacing="10">       
-        <tbody>
-          <tr>
-            <th colspan="2"><h2>Personal Information</td> </td>               
-          </tr>
-          <tr>
-            <td>First Name</td>
-            <td><input type="text" id="txt-fName"></td>            
-          </tr>
-          <tr>
-            <td>Last Name</td>
-            <td><input type="text" id="txt-lName"></td>            
-          </tr>
-          <tr>
-            <td>Phone Number</td>
-            <td><input type="text" id="txt-phone"></td>            
-          </tr>
-          <tr>
-            <td>Home Address</td>
-            <td><textarea name="" id="txt-address" cols="18" rows="4"></textarea></td>            
-          </tr>
-          <tr>
-            <td>Email Address</td>
-            <td><input type="email" id="txt-email"></td>            
-          </tr>
-          <tr>
-            <td>Gender</td>
-            <td>
-              <input type="radio" id="gender-male" name="gender" value="Male">Male
-              <input type="radio" id="gender-female" name="gender" value="Female">Female
-            </td>            
-          </tr>
-          <tr>
-            <td>State</td>
-            <td><select name="state" id="state">
-              <option selected="selected" value="Select State">Select State</option>
-              <option value="">NSW</option>
-              <option value="">QLD</option>
-              <option value="">VIC</option>
-              <option value="">NT</option>
-              <option value="">ACT</option>
-              <option value="">TAS</option>
-            </select></td>            
-          </tr>
-          <tr>
-            <td>How did you learn about us?</td>
-            <td>
-              <input type="checkbox" name="about" id="about">Web Site
-              <input type="checkbox" name="about" id="about">Tv Ads
-              <input type="checkbox" name="about" id="about">Print Ads
-              <input type="checkbox" name="about" id="about">Friends
-            </td>            
-          </tr>
-          <tr>
+  
+ 
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="logo"><img src="../images/logo.png" alt=""></div>
+      </div>
+      <div class="menu">
+        <ul class="nav">
+          <li><a href="../html/index.html">HOME</a></li>
+          <li><a href="../html/products.html">PRODUCTS</a></li>
+          <li><a href="../html/registration.html">REGISTRATION</a></li>
+          <li><a href="../html/survay.html">SURVEY</a></li>
+          <li><a href="../html/contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+      <div class="content">
+      <form class="frm" action="" name="registration">     
+        <table width="100%" border="0" cellpadding="10" cellspacing="10">       
+          <tbody>
             <tr>
-              <td>would you recommend us?</td>
+              <th colspan="2"><h2>Personal Information</td> </td>               
+            </tr>
+            <tr>
+              <td>First Name</td>
+              <td><input type="text" id="txt_fname"></td>            
+            </tr>
+            <tr>
+              <td>Last Name</td>
+              <td><input type="text" id="txt_lname"></td>            
+            </tr>
+            <tr>
+              <td>Phone Number</td>
+              <td><input type="text" id="txt_phone"></td>            
+            </tr>
+            <tr>
+              <td>Home Address</td>
+              <td><textarea name="" id="txt_address" cols="18" rows="4"></textarea></td>            
+            </tr>
+            <tr>
+              <td>Email Address</td>
+              <td><input type="email" id="txt_email"></td>            
+            </tr>
+            <tr>
+              <td>Gender</td>
               <td>
-                <input type="radio" id="yes" name="recom" value="Yes">Yes
-                <input type="radio" id="no" name="recom" value="No">No
+                <input type="radio" id="gender" name="gender" value="Male">Male
+                <input type="radio" id="gender" name="gender" value="Female">Female
               </td>            
             </tr>
             <tr>
-              
-              <td colspan="2">
-                <input type="button" class="btn btn-register" value="Register" onclick="validator()">
-                <input type="button" class="btn btn-clean" value="Reset" onclick="clear()">
-              </td>                           
-            </tr>    
-          
-        </tbody>        
-      </table>
-    </form>
+              <td>State</td>
+              <td><select name="state" id="state">
+                <option selected="selected" value="Select State">Select State</option>
+                <option value="">NSW</option>
+                <option value="">QLD</option>
+                <option value="">VIC</option>
+                <option value="">NT</option>
+                <option value="">ACT</option>
+                <option value="">TAS</option>
+              </select></td>            
+            </tr>
+            <tr>
+              <td>How did you learn about us?</td>
+              <td>
+                <input type="checkbox" name="about" id="about">Web Site
+                <input type="checkbox" name="about" id="about">Tv Ads
+                <input type="checkbox" name="about" id="about">Print Ads
+                <input type="checkbox" name="about" id="about">Friends
+              </td>            
+            </tr>
+            <tr>
+              <tr>
+                <td>would you recommend us?</td>
+                <td>
+                  <input type="radio" id="recom" name="recom" value="Yes">Yes
+                  <input type="radio" id="recom" name="recom" value="No">No
+                </td>            
+              </tr>
+              <tr>
+                
+                <td colspan="2">
+                  <input type="button" class="btn btn-register" value="Register" onclick="validator()">
+                  <input type="button" class="btn btn-clean" value="Reset" onclick="clear()">
+                </td>                           
+              </tr>    
+            
+          </tbody>        
+        </table>
+      </form>
+      </div>
+      <div class="footer"
+      <p>Kent Copyright &copy; 2024.</p>
     </div>
-    <div class="footer">
-		<p>Kent Copyright &copy; 2024.</p>
-	</div>
-  </div>
-  <body></body>
+    </div>
+  </body>
 </html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        *{
+            font-family: Jetbrains Mono;
+        }
+        
+    </style>
+    <script>
+        var numbers=[1,80,650,50.5,-10]
+        document.write("elements: ", numbers,"<br>");
+        document.write("element: ", numbers[0],"<br>");
+        var numbers=["apple","pineaple","lemon","lime","strowberry","cherry"]
+        document.write("elements: ", numbers,"<br>");
+        document.write("element: ", numbers[0],"<br>");
+
+        var letters=["a","b","c"];
+        var num=[1,2,3];
+        
+
+        //array methods
+        document.write("quantity element: ", numbers.length,"<br>");
+        document.write("last element: ", numbers[numbers.length-1],"<br>");
+        document.write("arryas concat: ", letters.concat(num),"<br>");
+        letters.pop()
+        document.write("delete the last array element ", letters,"<br>");
+        letters.push("z")
+        document.write("add new array element: ", letters,"<br>");
+        letters.shift();
+        document.write("delete the first array element: ", letters,"<br>");
+        letters.unshift("x");
+        document.write("insert element at start: ", letters,"<br>");
+        letters.splice(2,3);
+        document.write("delete an element from a point ", letters,"<br>");
+        document.write("sort array a-z: ", letters.sort(),"<br>");
+        document.write("sort array z-a: ", letters.reverse(),"<br>");
+
+    </script>
+</body>
+</html>
